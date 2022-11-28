@@ -44,7 +44,7 @@ const formgenerator=(data)=>{
         element = element + data.orderPurchases[i].amount;
     }
     var date1 = new Date(data.orderPurchases[0].date);
-    var date2 = new Date(data.orderPurchases[1].date);
+    var date2 = new Date(data.orderPurchases[numoforders-1].date);
     var Difference_In_Time = date2.getTime() - date1.getTime();
     var Difference_In_Days = Difference_In_Time / (1000 * 3600 * 24);
     let days = 0;
